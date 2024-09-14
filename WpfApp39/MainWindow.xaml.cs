@@ -106,6 +106,7 @@ namespace WpfApp39
 
         private void difficultyScreen()
         {
+            cleanUp();
             this.Height = 500;
             this.Width = 800;
             uiCollapser(MyGrid);
@@ -118,6 +119,8 @@ namespace WpfApp39
 
         private void Difficulty(object sender, string buttonContent)
         {
+
+
             if (buttonContent == "Extreme")
             {
                 difficulty = '3';
@@ -142,7 +145,8 @@ namespace WpfApp39
             this.Height = 1000;
 
             uiDCollapser(MyGrid);
-            cleanUp();
+
+
             wordandHintGenerator();
         }
 
@@ -222,8 +226,10 @@ namespace WpfApp39
             r_x_eye1.Opacity = 0;
             r_x_eye2.Opacity = 0;
             mouth.Opacity = 0;
+
             wrongLetters.Clear();
             wronglettersfunction();
+
             pressedKeys.Clear();
             buttonEnabler();
             wordandHintGenerator();
@@ -239,6 +245,8 @@ namespace WpfApp39
                 Button button = sender as Button;
 
                 letter = char.Parse((string)button.Content);
+
+                //MessageBox.Show(letter.ToString());
             }
             else
             {
