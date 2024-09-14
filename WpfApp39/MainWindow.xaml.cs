@@ -40,7 +40,7 @@ namespace WpfApp39
 
         private bool? win;
 
-        private readonly int time = 10;
+        private int time { get; set; } = 10;
         private int sec { get; set; }
 
         private int hintLength { get; set; } = 1;
@@ -122,16 +122,19 @@ namespace WpfApp39
             {
                 difficulty = '3';
                 hintLength = 7;
+                time = 20;
             }
             else if (buttonContent == "Hard")
             {
                 difficulty = '2';
                 hintLength = 4;
+                time = 15;
             }
             else if (buttonContent == "Easy")
             {
                 difficulty = '1';
                 hintLength = 1;
+                time = 10;
             }
             DifficultySelector.Content = null;
 
@@ -139,6 +142,7 @@ namespace WpfApp39
             this.Height = 1000;
 
             uiDCollapser(MyGrid);
+            cleanUp();
             wordandHintGenerator();
         }
 
@@ -293,6 +297,7 @@ namespace WpfApp39
         {
             timer.Stop();
             win = true;
+            hint.Text = "C O R R E C T !";
             buttonDisEnabler();
             newword.IsEnabled = true;
             winCount++;
@@ -430,7 +435,7 @@ namespace WpfApp39
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-          //  extra.Text = Width.ToString();
+            //  extra.Text = Width.ToString();
 
         }
     }
