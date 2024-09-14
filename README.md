@@ -14,6 +14,20 @@ This project is a Hangman game built using the Windows Presentation Foundation (
 -  **Win/Loss Tracking**: Displays the number of wins and losses after each round.
 -  **Random Word Generator**: Words are randomly selected from predefined lists based on the difficulty level.
 
+### **Difficulty Levels**
+
+- **Easy**:
+  - 1 letter hint 
+  - 10 seconds timer
+- **Hard**:
+  - 4 letter hints
+  - 15 seconds timer
+- **Extreme**:
+  - 7 letter hints
+  - 20 seconds timer
+
+
+### **Some Screenshots**
 ![DIFFICULTYSCREEN](/images/difficultyScreen.png)
 
 ![THEGAME](/images/theGame1.png)
