@@ -13,6 +13,7 @@ This project is a Hangman game built using the Windows Presentation Foundation (
 -  **Lives System**: Players have 6 lives to guess the word. A visual hangman is drawn as lives are lost.
 -  **Win/Loss Tracking**: Displays the number of wins and losses after each round.
 -  **Random Word Generator**: Words are randomly selected from predefined lists based on the difficulty level.
+-  **Keyboard Input**: Players can use the keyboard to input their guesses
 
 ### **Difficulty Levels**
 
