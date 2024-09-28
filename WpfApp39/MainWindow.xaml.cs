@@ -122,19 +122,19 @@ namespace WpfApp39
             {
                 difficulty = '3';
                 hintLength = 7;
-                time = 20;
+                time = 200;
             }
             else if (buttonContent == "Hard")
             {
                 difficulty = '2';
                 hintLength = 4;
-                time = 15;
+                time = 150;
             }
             else if (buttonContent == "Easy")
             {
                 difficulty = '1';
                 hintLength = 1;
-                time = 10;
+                time = 100;
             }
             DifficultySelector.Content = null;
 

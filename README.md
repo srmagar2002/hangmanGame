@@ -13,7 +13,7 @@ This project is a Hangman game built using the Windows Presentation Foundation (
 -  **Lives System**: Players have 6 lives to guess the word. A visual hangman is drawn as lives are lost.
 -  **Win/Loss Tracking**: Displays the number of wins and losses after each round.
 -  **Random Word Generator**: Words are randomly selected from predefined lists based on the difficulty level.
--  **Keyboard Input**: Players can use the keyboard to input their guesses
+-  **Keyboard Input**: Players can use the keyboard to input their guesses.
 
 ### **Difficulty Levels**
 
@@ -27,6 +27,22 @@ This project is a Hangman game built using the Windows Presentation Foundation (
   - 7 letter hints
   - 20 seconds timer
 
+### **Installation 
+
+**Step 1: Clone the repo**
+- Open a terminal (Command Prompt, PowerShell, or Git Bash).
+- Run the following command to clone the repo.
+  ```bash
+  git clone https://github.com/srmagar2002/hangmanGame.git
+
+**Step 2: Open the project in Visual Studio**
+- Open **Visual Studio**.
+- Click **Open a project or solution**.
+- Navigate to the clone repository folder, select the .sln (solution) file, and open it.
+
+**Step 3: Run the application**
+- Click Build > Build Soution or press `ctrl+shift+B` to complie the project
+- Once the build is successful, press `f5` to run the application or click **Debug > Start Debugging**.
 
 ### **Some Screenshots**
 ![DIFFICULTYSCREEN](/images/difficultyScreen.png)
